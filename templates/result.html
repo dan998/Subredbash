@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Scan Results for {{ website }}</h1>
+        <pre>{{ output }}</pre>
+        
+        <a href="/">← Scan Another Website</a>
+    </div>
+</body>
+</html>
